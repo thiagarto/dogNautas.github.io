@@ -1,0 +1,59 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-image: url('../../assets/1533.jpg');
+    height: 100%;
+    width: 100%;
+
+   
+  }
+  .positioning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    width: 90vh;
+    align-self: center;
+    backdrop-filter: blur(2.5px);
+  }
+  .title {
+    font-size: 8vh;
+    color: #EE8F1A;
+    margin: 3vh;
+    text-shadow: 5px 2px 5px rgb(34,193,195);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    position:calc(12,23,45);
+    padding-top: 122px;
+   }
+  .title:hover{
+    transform: scale(120%);
+    transition: 0.5s;
+
+  }
+  .subtitle {
+    font-size: 4vh;
+    color: #EE8F1A;
+    margin: 3vh;
+    text-shadow: 5px 2px 5px rgb(34,193,195);
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .botoncitoo {
+    margin-top: 4vh;
+    border-radius: 15px;
+    font-size: 5vh;
+    background-size: contain;
+    font-weight: 700;
+    color: rgb(34,193,195);
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid rgb(50, 235, 238);
+    text-shadow: 1px 1px 4px black;
+  }
+  
+  .botoncitoo:hover {
+    cursor: pointer;
+    transform: scale(150%);
+    color: #EE8F1A;
+    transition: 0.5s;
+  }

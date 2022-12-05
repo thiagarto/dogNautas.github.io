@@ -1,0 +1,30 @@
+.search input[type="search"] {
+    width: 75vh;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  .search {
+    display: flex;
+    float:left;
+    margin-right: 40px;
+    gap: 4vh;
+    width: 50vh;
+    height: 32px;
+    font-size: large;
+    font-family: 'Noto Serif', serif; 
+    border-radius: 20px;
+   }
+
+  .search::placeholder {
+    text-align: center;
+  }
+  
+  .search input[type="search"]:hover {
+    transform: scale(108%);
+    transition: 0.5s;
+    
+  }
+  

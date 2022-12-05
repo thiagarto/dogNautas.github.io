@@ -1,0 +1,28 @@
+.card {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    margin-bottom: 1vh;
+    padding: 1vh;
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+  }
+  .container h3{
+    font-family: 'Rokkitt', serif;
+  }
+  .container{
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .card:hover {
+    transform: scale(105%);
+    transition: 0.5s;
+    color: #e7641b;
+    filter: brightness(1.15);
+    border-color: #42BFC6;
+    font-family: 'Zen Dots', cursive;
+  }

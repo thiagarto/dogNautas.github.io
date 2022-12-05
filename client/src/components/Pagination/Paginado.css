@@ -1,0 +1,36 @@
+.paginado {
+  display: flex;
+  align-items: normal;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  justify-content: center;
+  border-radius: 20px;
+  border-color: #E7641B ;
+  background-color: transparent;
+}
+.botoncito {
+  cursor: pointer;
+  list-style: none;
+  width: 15vh;
+  height: 15vh;
+  padding: 2vh;
+  border-radius: 60%;
+  border-color: ;
+  color: #EE8F1A;
+  font-weight: 750;
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+  font-size: 3vh;
+  margin: 3vh;
+  opacity: 1;
+  transition: 0.5s;
+  text-shadow: 1px 1px 2px rgb(0, 204, 255);
+}
+.botoncito:hover {
+  transition: 0.5s;
+  color: #26c0c3;
+  transform: scale(120%);
+  text-shadow: 1px 1px 5px rgb(230, 129, 35);
+}

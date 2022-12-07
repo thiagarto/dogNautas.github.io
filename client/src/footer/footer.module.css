@@ -2,7 +2,9 @@
     border-top: 1.5px solid hsla(177, 10%, 45%, 0.933);
     width: 100%;
     color: var(--secondary-color);
-max-height:100vh;
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(197,182,209,1) 0%, rgba(34,193,195,1) 100%);
+min-height: 14.5vh;
 }
 
 .site_footer {
@@ -34,35 +36,5 @@ max-height:100vh;
 }
 
 @media (max-width: 640px) {
-    .site_footer .copyright{
-        padding: 0;
-    }
-    
-    .redes_sociales{
-        padding: 2rem 0 0 0;
-    }
-
-    .redes_sociales a{
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 570px) {
-    
-
-    .site_footer .copyright p{
-        font-size: 1.2rem;
-    }
-
-    .redes_sociales{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0;
-    }
-
-    .redes_sociales img{
-        width: 25px;
-    }
-
+   
 }

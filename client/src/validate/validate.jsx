@@ -63,6 +63,8 @@ export default function validate(input) {
       errors.life_span = "Only positive integer numbers!";
     } else if (input.life_span.charAt(0) === "-") {
       errors.life_span = "Only positive integer numbers!";
+    }else if( input.life_span.length>5){
+      errors.life_span = "A dog cant live for ever"
     }
     ////////////////////////////////
     else if (input.temperament?.length === 5) {

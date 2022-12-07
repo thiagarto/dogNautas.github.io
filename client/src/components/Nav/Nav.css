@@ -11,19 +11,7 @@
   background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(197,182,209,1) 100%);
 }
-.icono-titulo{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  min-height: 10vh;
-  height: 12vh;
-  width: 100%;
-  padding: 50px 0;
-}
-.flex-container h1{
-  text-decoration: none;
-}
+
 .logo{
   width: 110px;
   padding-top: 13px;
@@ -36,6 +24,13 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(197,182,209,1) 100
   font-size: 50px;
   font-family: 'Zen Dots', cursive;
 
+}
+.flex-container button{
+  cursor: pointer;
+
+  transform: scale(135%);
+  color: #EE8F1A;
+  transition: 0.5s;
 }
 .letters:hover {
   transform: scale(135%);

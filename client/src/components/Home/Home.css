@@ -54,7 +54,7 @@
 }
 .wrapper2 select:hover {
   font-size: 3.5vh;
-  background-color:#EE8F1A;
+  background-color:#ffe0d0;
   transform: scale(105%);
   font-weight: 600;
   color:#09445c;
@@ -101,3 +101,12 @@
   color:#E7641B;
   font-size: 44px;
 }
+@media (max-width: 400px){
+  .title {
+    margin-top: 4rem;
+  }
+  .wrapper2{
+
+  }
+
+  }

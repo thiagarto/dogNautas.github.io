@@ -125,6 +125,7 @@ const Home = () => {
                   CurrentDogs.map((el) => (
                     <div class="card">
                       <Card
+                      id={el.id}
                         name={el.name}
                         weight={el.weight?.metric}
                         temperament={el.temperament}
@@ -146,7 +147,7 @@ const Home = () => {
                     <p>NO DOGS WERE FOUND</p>
                     <img
                       src={gif}
-                      alt="SE PUDRIO EL SOQUE"
+                      alt="not found"
                       height="300"
                       width="300"
                     ></img>

@@ -1,11 +1,12 @@
 const fetch = require("node-fetch");
 const { Dog, Temperament } = require("../db");
-
+require('dotenv').config();
+const {YOUR_API_KEY}= process.env
 //--------------------------------------MANEJO DE INFO DE API, DB Y UNION DE AMBAS-------------------------------------//
 
 const getAPIinfo = async () => {
   const apiURL = await fetch(
-    "https://api.thedogapi.com/v1/breeds?api_key=7ddc6f6e-5470-41ff-8f75-cc16b07bd6a2"
+   ` https://api.thedogapi.com/v1/breeds?api_key=${YOUR_API_KEY}`
   ).then((response) => response.json());
   return apiURL;
 };

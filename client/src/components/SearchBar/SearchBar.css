@@ -9,7 +9,7 @@
   .search {
     display: flex;
     float:left;
-    margin-right: 40px;
+    margin-right: 90px;
     gap: 4vh;
     width: 50vh;
     height: 32px;
@@ -20,6 +20,12 @@
 
   .search::placeholder {
     text-align: center;
+  }
+  .search input:hover{
+    cursor: pointer;
+    border: 2px solid rgb(34,193,195);
+    background-color: #ffe0d0;
+    
   }
   
   .search input[type="search"]:hover {

@@ -3,11 +3,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
-const Card = ({ name, weight, image, temperament }) => {
+const Card = ({ name, weight, image, temperament,id }) => {
   let navigate = useNavigate();
   function DetailHandler(e) {
     e.preventDefault();
-    navigate(`/dog/${name}`);
+    navigate(`/dog/${id?id:name}`);
   }
   return (
     <>

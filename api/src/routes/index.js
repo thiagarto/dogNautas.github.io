@@ -30,6 +30,22 @@ router.get("/dogs", (req, res) => {
     });
   }
 });
+router.get("/dogs/:id", async(req, res, next)=>{
+  try {
+      const id = req.params.id;//requiere parametro id
+      const dogsTotales= await totalinfo()//llama la funcion total de perros
+      
+      const dog = dogsTotales.find(ele => ele.id == id);//busca el perro por id
+
+      if(!dog){
+          res.status(404).send("No esta disponible");
+      } else {
+          res.status(200).send(dog);
+      }
+  } catch (error) {
+      next(error);
+  }
+}) 
 
 router.get("/dogs/:name", async (req, res) => {
   const { name } = req.params;
@@ -41,6 +57,8 @@ router.get("/dogs/:name", async (req, res) => {
     ? res.status(200).send(DogParams)
     : res.status(404).send("NO ESTA LLEGANDO EL PERRO POR PARAMS");
 });
+
+
 router.get("/temperament", async (req, res) => {
   let getDBInfo = await Temperament.findAll();
   if (getDBInfo.length > 0) {

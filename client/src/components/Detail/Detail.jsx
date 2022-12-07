@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
 import Nav from "../Nav/Nav";
 import gif from "../../assets/gif-2.gif";
 import { useParams } from "react-router-dom";
@@ -33,6 +32,7 @@ const Detail = () => {
           ></img>
           <p> LOADING!</p>
         </div>
+          
         <div style={dog.name ? { display: "block" } : { display: "none" }}>
           <div className="detail2">
             <img
@@ -44,6 +44,7 @@ const Detail = () => {
               }}
               alt="Dog NOT FOUND"
             ></img>
+            
               
       <div className="text">
               <div><h2>Name: </h2>{dog.name}</div>

@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   font-weight: 900;
-  background-image: url("");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +13,7 @@
   overflow-y: scroll;
   align-items: center;
   backdrop-filter: blur(3px);
- 
+
 
 }
 .detail2 {
@@ -58,7 +57,7 @@
   cursor: pointer;
   border: 2px solid rgb(34,193,195);
   transform: scale(105%);
-  background-color: #E7641B;
+  background-color: #ffe0d0;
   
 }
 .loading {
@@ -71,6 +70,6 @@
   transition: 0.5s;
 }
 .loading p{
-  color:#E7641B;
+  color:#6c4b3a;
   font-size: 44px;
 }
